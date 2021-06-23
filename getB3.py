@@ -229,7 +229,7 @@ def read_b3_history(filename, cod):
 		numero_distribuicao = line[242:245]
 
 		
-		if (mercado == "010" and data > "20210101" and cod in cod_papel ):
+		if (mercado == "010" and data > "20200101" and cod in cod_papel ):
 			print(data+','+cod_papel.strip()+','+convert_strtomoney(preco_abertura)+','+convert_strtomoney(preco_fechamento)+','+convert_strtomoney(preco_min)+','+convert_strtomoney(preco_max)+','+convert_strtomoney(preco_medio)+','+numero_negocios)	
 
 		read_file.close() 
